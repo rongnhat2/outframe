@@ -184,6 +184,287 @@
 .I-mini_category .mini_category_wrapper .category_item:not(:last-child){
 	margin: 0 90px 0 0;
 }
+.I-banner_body_02{
+	width: 100%;
+	height: 1320px;
+	padding: 0 120px;
+}
+.I-banner_body_02 .banner_body_wrapper{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.I-banner_body_02 .banner_body_wrapper .image_background{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.I-banner_body_02 .banner_body_wrapper .header_banner{
+	position: relative;
+	z-index: 2;
+	float: right;
+	width: calc(100% - 480px);
+	height: 480px;
+	display: flex;
+	align-items: center;
+}
+.I-banner_body_02 .banner_body_wrapper .header_banner .header_banner_wrapper{
+	width: 960px;
+	height: 240px;
+	border: 1px solid #2D2D2D;
+	padding: 30px 50px;
+	background-color: #fff;
+	font-size: 42px;
+	line-height: 47px;
+	font-family: 'SVN-Bold';
+	overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.I-banner_body_02 .banner_body_wrapper .side_banner{
+	position: relative;
+	z-index: 2;
+	float: left;
+	width: 480px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+.I-banner_body_02 .banner_body_wrapper .side_banner .side_wrapper{
+	width: 240px;
+	padding: 360px 0 0 0;
+}
+.I-banner_body_02 .banner_body_wrapper .side_banner .side_wrapper .side_item{
+	width: 100%;
+	height: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #2D2D2D;
+	font-size: 21px;
+	line-height: 31px;
+	font-family: 'SVN-Book';
+	background-color: #fff;
+}
+.I-banner_body_02 .banner_body_wrapper .side_banner .side_wrapper .side_item.is-select{
+	font-family: 'SVN-Regular';
+}
+.I-banner_body_02 .banner_body_wrapper .content_banner{
+	position: relative;
+	z-index: 2;
+	float: right;
+	width: calc(100% - 480px);
+	height: calc(100% - 480px);
+	display: flex;
+	justify-content: center;
+}
+.I-banner_body_02 .banner_body_wrapper .content_banner .content_banner_wrapper{
+	width: 960px;
+	height: 100%;
+	border: 1px solid #2D2D2D;
+	background-color: #fff;
+	padding: 60px;
+}
+.I-banner_body_02 .banner_body_wrapper .content_banner .content_banner_wrapper p.text_wrapper{
+	font-size: 18px;
+	line-height: 24px;
+	font-family: 'SVN-Book';
+	margin: 0 0 20px 0;
+}
+.I-banner_body_03{
+	width: 100%;
+	padding: 120px 0;
+	height: 1680px;
+}
+.I-banner_body_03 .banner_body_wrapper{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.I-banner_body_03 .banner_body_wrapper .image_background{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	padding: 0 120px;
+}
+.I-banner_body_03 .banner_body_wrapper .side_content{
+	position: relative;
+	float: left;
+	width: 50%;
+	height: 100%;
+	padding: 0 0 0 120px;
+	z-index: 2;
+}
+.I-banner_body_03 .banner_body_wrapper .side_content .side_title{
+	width: 100%;
+	height: 720px;
+	padding: 120px 0;
+}
+.I-banner_body_03 .banner_body_wrapper .side_content .side_title .title_wrapper{
+	width: 100%;
+	height: 360px;
+}
+.I-banner_body_03 .banner_body_wrapper .side_content .side_title .title_wrapper .title{
+	float: left;
+	width: 720px;
+	height: 100%;
+	padding: 80px 50px;
+	display: flex;
+	align-items: center;
+	font-size: 40px;
+	line-height: 56px;
+	font-family: 'SVN-Bold';
+	background-color: #fff;
+	border: 1px solid #2D2D2D;
+}
+.I-banner_body_03 .banner_body_wrapper .side_content .side_title .copyright_wrapper{
+	width: 100%;
+	height: 120px;
+}
+.I-banner_body_03 .banner_body_wrapper .side_content .side_title .copyright_wrapper .copyright{
+	float: right;
+	width: 600px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+	border: 1px solid #2D2D2D;
+	font-size: 18px;
+	line-height: 38px;
+	font-family: 'SVN-Book';
+}
+.I-banner_body_03 .banner_body_wrapper .side_content .side_detail{
+	width: 100%;
+	height: calc(100% - 720px);
+	font-size: 20px;
+	line-height: 24px;
+}
+.I-banner_body_03 .banner_body_wrapper .side_content .side_detail p.text_wrapper{
+	font-family: 'SVN-Book';
+	margin: 0 0 25px 0
+}
+.I-banner_body_03 .banner_body_wrapper .side_content .side_detail p.title_wrapper{
+	font-family: 'SVN-Bold';
+	margin: 0 0 25px 0
+}
+.I-banner_body_03 .banner_body_wrapper .side_banner{
+	float: left;
+	width: 50%;
+	height: 100%;
+}
+.I-banner_body_03 .banner_body_wrapper .side_banner .image_banner{
+	width: 100%;
+	padding: 360px 0 0 120px;
+}
+.I-banner_body_03 .banner_body_wrapper .side_banner .image_banner .image_banner_wrapper{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+.I-banner_body_03 .banner_body_wrapper .side_banner .image_banner .image_banner_wrapper img{
+	width: 100%;
+}
+.I-banner_wrapper{
+	width: 100%;
+	overflow: hidden;
+}
+.I-banner_wrapper_02{
+	width: 100%;
+	overflow: hidden;
+	padding: 0 120px;
+}
+.I-banner_wrapper .image_wrapper,
+.I-banner_wrapper_02 .image_wrapper{
+	width: 100%;
+	overflow: hidden;
+}
+.I-banner_wrapper .image_wrapper img,
+.I-banner_wrapper_02 .image_wrapper img{
+	width: 100%;
+}
+.I-detail_wrapper{
+	width: 100%;
+	overflow: hidden;
+	padding: 120px 0 0 0;
+}
+.I-detail_wrapper .detail_item{
+	width: 100%;
+	overflow: hidden;
+}
+.I-detail_wrapper .detail_item .image_wrapper{
+	float: left;
+	width: 50%;
+	height: 1080px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+}
+.I-detail_wrapper .detail_item .image_wrapper img{
+	width: 100%;
+}
+.I-detail_wrapper .detail_item .detail_wrapper{
+	float: left;
+	width: 50%;
+	height: 1080px;
+	padding: 120px;
+}
+.I-detail_wrapper .detail_item .detail_wrapper p.text_detail{
+	font-size: 20px;
+	line-height: 24px;
+	font-family: 'SVN-Book';
+	margin: 0 0 25px 0
+}
+.I-detail_wrapper .detail_item:nth-child(even){
+	width: 100%;
+	overflow: hidden;
+}
+.I-detail_wrapper .detail_item:nth-child(even) .image_wrapper{
+	float: right;
+}
+.I-detail_wrapper .detail_item:nth-child(even) .detail_wrapper{
+	float: right;
+}
+.I-text_wrapper_content{
+	width: 100%;
+	height: 600px;
+	padding: 120px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.I-text_wrapper_content_02{
+	width: 100%;
+	height: 360px;
+	padding: 120px 0 0 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.I-text_wrapper_content .text_wrapper,
+.I-text_wrapper_content_02 .text_wrapper{
+	width: 1200px;
+	height: 100%;
+	font-size: 20px;
+	line-height: 24px;
+}
+.I-text_wrapper_content .text_wrapper p.text_title,
+.I-text_wrapper_content_02 .text_wrapper p.text_title{
+	font-family: 'SVN-Bold';
+	margin: 0 0 25px 0
+}
+.I-text_wrapper_content .text_wrapper p.text_detail,
+.I-text_wrapper_content_02 .text_wrapper p.text_detail{
+	font-family: 'SVN-Book';
+	margin: 0 0 25px 0
+}
 .I-banner_body{
 	width: 100%;
 	height: 840px;
