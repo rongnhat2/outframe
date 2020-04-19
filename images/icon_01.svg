@@ -1,0 +1,9 @@
+<svg id="Search_tab" data-name="Search tab" xmlns="http://www.w3.org/2000/svg" width="19.608" height="21.608" viewBox="0 0 19.608 21.608">
+  <g id="icon-search">
+    <g id="Ellipse_1" data-name="Ellipse 1" fill="none" stroke="#646464" stroke-width="3">
+      <circle cx="8.5" cy="8.5" r="8.5" stroke="none"/>
+      <circle cx="8.5" cy="8.5" r="7" fill="none"/>
+    </g>
+    <line id="Line_1" data-name="Line 1" x2="4" y2="5" transform="translate(13.5 14.5)" fill="none" stroke="#646464" stroke-linecap="round" stroke-width="3"/>
+  </g>
+</svg>
