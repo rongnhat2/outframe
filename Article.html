@@ -88,16 +88,16 @@
 						</div>
 						<div class="network">
 							<div class="network_item">
-								<img src="images/facebook-f-brands.png">
+								<i class="fab fa-facebook-f"></i>
 							</div>
 							<div class="network_item">
-								<img src="images/twitter-brands.png">
+								<i class="fab fa-twitter"></i>
 							</div>
 							<div class="network_item">
-								<img src="images/pinterest-p-brands.png">
+								<i class="fab fa-pinterest-p"></i>
 							</div>
 							<div class="network_item">
-								<img src="images/link-solid.png">
+								<i class="fas fa-link"></i>
 							</div>
 						</div>
 					</div>
@@ -291,7 +291,10 @@
 							</div>
 							<div class="input_wrapper">
 								<input type="" name="" placeholder="hi@outframe.com.vn">
-								<button><img src="images/icon_01.png"></button>
+								<button>
+									<img src="images/icon_01.png">
+									<img src="images/icon_03.png" class="hover">
+								</button>
 							</div>
 							<div class="text_wrapper">
 								Sign up for the latest fashion news, insights and style tips.
@@ -320,6 +323,18 @@
 		</div>
 	</body>
 	<script src="js/bootstrap3.js"></script>
+	<script type="text/javascript">
+		$('.owl-carousel').owlCarousel({
+		    loop:true,
+		    items:3,
+		})
+		$('.I-carousel').find('.next_carousel').on('click', function(){
+		    $('.slider_carousel').trigger('next.owl.carousel');
+		})
+		$('.I-carousel').find('.prev_carousel').on('click', function(){
+		    $('.slider_carousel').trigger('prev.owl.carousel');
+		})
+	</script>
 	<script src="js/effect_custom.js"></script>
 </html>
 
