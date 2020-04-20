@@ -1,10 +1,109 @@
-$('.tab_select').on('click', function(){
-	var index = $(this).index()
-	$('.tab_item').removeClass('is-select');
-	$('.tab_item').eq(index).addClass('is-select');
-	$('.tab_select').removeClass('is-select');
-	$('.tab_select').eq(index).addClass('is-select');
-})
+var data =  '<div class="I-item">' +
+			'	<div class="item_image">' +
+			'		<div class="image_wrapper">' +
+			'			<img src="images/image_07.png">' +
+			'		</div>' +
+			'	</div>' +
+			'	<div class="item_content">' +
+			'		<div class="item_category">' +
+			'			fashion' +
+			'		</div>' +
+			'		<a href="#" class="item_title">' +
+			'			Metropolitan x adidas Skateboarding "Drift Culture" Pack Is Built for Speed' +
+			'		</a>' +
+			'		<div class="item_detail">' +
+			'			London-based retailer Browns has showcased some of the highlights from the Spring/Summer 2020 season in a new editorial shot in Sāo Paulo. Themed around the work of Italian artist and architect Lina Bo Bardi, the editorial features pieces that reflect her work in the city, including the SESC Pompéia and MASP Museum of Art....'+
+			'		</div>' +
+			'		<div class="item_info">' +
+			'			<div class="copyright">' +
+			'				 by Vanh.' +
+			'			</div>' +
+			'			<div class="time">' +
+			'				20m ago' +
+			'			</div>' +
+			'		</div>' +
+			'	</div>' +
+			'</div>' +
+			 '<div class="I-item">' +
+			'	<div class="item_image">' +
+			'		<div class="image_wrapper">' +
+			'			<img src="images/image_08.png">' +
+			'		</div>' +
+			'	</div>' +
+			'	<div class="item_content">' +
+			'		<div class="item_category">' +
+			'			fashion' +
+			'		</div>' +
+			'		<a href="#" class="item_title">' +
+			'			Metropolitan x adidas Skateboarding "Drift Culture" Pack Is Built for Speed' +
+			'		</a>' +
+			'		<div class="item_detail">' +
+			'			London-based retailer Browns has showcased some of the highlights from the Spring/Summer 2020 season in a new editorial shot in Sāo Paulo. Themed around the work of Italian artist and architect Lina Bo Bardi, the editorial features pieces that reflect her work in the city, including the SESC Pompéia and MASP Museum of Art....'+
+			'		</div>' +
+			'		<div class="item_info">' +
+			'			<div class="copyright">' +
+			'				 by Vanh.' +
+			'			</div>' +
+			'			<div class="time">' +
+			'				20m ago' +
+			'			</div>' +
+			'		</div>' +
+			'	</div>' +
+			'</div>' +
+			 '<div class="I-item">' +
+			'	<div class="item_image">' +
+			'		<div class="image_wrapper">' +
+			'			<img src="images/image_09.png">' +
+			'		</div>' +
+			'	</div>' +
+			'	<div class="item_content">' +
+			'		<div class="item_category">' +
+			'			fashion' +
+			'		</div>' +
+			'		<a href="#" class="item_title">' +
+			'			Metropolitan x adidas Skateboarding "Drift Culture" Pack Is Built for Speed' +
+			'		</a>' +
+			'		<div class="item_detail">' +
+			'			London-based retailer Browns has showcased some of the highlights from the Spring/Summer 2020 season in a new editorial shot in Sāo Paulo. Themed around the work of Italian artist and architect Lina Bo Bardi, the editorial features pieces that reflect her work in the city, including the SESC Pompéia and MASP Museum of Art....'+
+			'		</div>' +
+			'		<div class="item_info">' +
+			'			<div class="copyright">' +
+			'				 by Vanh.' +
+			'			</div>' +
+			'			<div class="time">' +
+			'				20m ago' +
+			'			</div>' +
+			'		</div>' +
+			'	</div>' +
+			'</div>' +
+			 '<div class="I-item">' +
+			'	<div class="item_image">' +
+			'		<div class="image_wrapper">' +
+			'			<img src="images/image_10.png">' +
+			'		</div>' +
+			'	</div>' +
+			'	<div class="item_content">' +
+			'		<div class="item_category">' +
+			'			fashion' +
+			'		</div>' +
+			'		<a href="#" class="item_title">' +
+			'			Metropolitan x adidas Skateboarding "Drift Culture" Pack Is Built for Speed' +
+			'		</a>' +
+			'		<div class="item_detail">' +
+			'			London-based retailer Browns has showcased some of the highlights from the Spring/Summer 2020 season in a new editorial shot in Sāo Paulo. Themed around the work of Italian artist and architect Lina Bo Bardi, the editorial features pieces that reflect her work in the city, including the SESC Pompéia and MASP Museum of Art....'+
+			'		</div>' +
+			'		<div class="item_info">' +
+			'			<div class="copyright">' +
+			'				 by Vanh.' +
+			'			</div>' +
+			'			<div class="time">' +
+			'				20m ago' +
+			'			</div>' +
+			'		</div>' +
+			'	</div>' +
+			'</div>'
+
+
 
 $('.side_item').on('click', function(){
 	var index = $(this).index()
@@ -14,34 +113,20 @@ $('.side_item').on('click', function(){
 	$('.content_banner_wrapper').eq(index).addClass('is-select');
 })
 
-var stickyNav = $('.item_side').offset().top;
-window.onscroll = function() {
-	NavFixed();
-}
-function NavFixed() {
+$(".learn_more_wrapper").on('click', function(){
+	$(this).parent().find('.item_list').append(data)
+})
 
-	var valueY = window.pageYOffset - stickyNav
-	var maxY = $('.item_list').height() - $('.I-preview').height()
-	$('.item_side').css({
-		'height': $('.item_list').height() + 'px'
-	})
-  	if (valueY > 0) {
-  		if(valueY > maxY){
-	  		$('.item_side').find('.I-preview').css({
-	  			'position': 'absolute',
-	  			'top': 'auto',
-	  			'bottom': 0
-	  		})
-  		}else{
-	  		$('.item_side').find('.I-preview').css({
-	  			'position': 'fixed',
-	  			'top': 0,
-	  			'bottom': 'auto',
-	  		})
-  		}
-  	} else {
-  		$('.item_side').find('.I-preview').css({
-  			'position': 'relative',
-  		})
-  	}
-}
+
+$('.I-header').find('.text').on('mouseover', function(){
+	$('.I-header').find('.form_open').addClass('is-open')
+})
+$('.I-header').find('.text').on('mouseout', function(){
+	$('.I-header').find('.form_open').removeClass('is-open')
+})
+$('.I-header').find('.form_open').on('mouseover', function(){
+	$(this).addClass('is-open')
+})
+$('.I-header').find('.form_open').on('mouseout', function(){
+	$(this).removeClass('is-open')
+})
